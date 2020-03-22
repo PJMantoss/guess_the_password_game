@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
             });
 
             password = getRandomValues(randomWords, 1)[0];
-            startGuessCount(guessCount);
+            setGuessCount(guessCount);
 
             wordList.addEventListener('click', updateGame);
         }
@@ -45,5 +45,6 @@ document.addEventListener('DOMContentLoaded', function(){
                 arrayCopy[i] = arrayCopy[j];
                 arrayCopy[j] = temp;
             }
+            return arrayCopy;
         }
 })
