@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
         let start = document.getElementById('start');
         start.addEventListener('click', function(){
-            
+            toggleClasses();
+            toggleClasses();
+            startGame();
         })
 })
