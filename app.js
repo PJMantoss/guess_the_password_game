@@ -50,6 +50,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
         let setGuessCount = newCount => {
             guessCount = newCount;
-            
+            document.getElementById('guesses-remaining').innerText = 
+            'Guesses remaining: ' + guessCount + '.';
+        }
+
+        let updateGame = e => {
+            if (e.target.tagName === 'LI' && !e.target.classList.contains('disabled')){
+                let guess = e.target.innerText;
+                let similarityScore = compareWords(guess, password)
+            }
         }
 })
