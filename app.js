@@ -18,6 +18,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
         let startGame = () => {
             let wordList = document.getElementById('word-list');
-            let randomWords = getRandomValues(words, wordCount)
+            let randomWords = getRandomValues(words, wordCount);
+            randomWords.forEach(word => {
+                let li = document.createElement('li');
+                li.innerText = word;
+                wordList.appendChild(li);
+            });
+
+            password = getRandomValues(randomWords, 1)[0];
+            startGuessCount(guessCount);
+
+            wordList.addEventListener('click', updateGame);
         }
 })
