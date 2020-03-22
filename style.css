@@ -46,3 +46,14 @@ body {
     background-color: #00FF00;
     color: black;
   }
+
+#start:active,
+#start:focus {
+  outline: none;
+}
+
+#word-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
