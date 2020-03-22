@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 let j = Math.floor(Math.random() * (i + 1));
 
                 let temp = arrayCopy[i];
+                arrayCopy[i] = arrayCopy[j];
+                arrayCopy[j] = temp;
             }
         }
 })
