@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
         let start = document.getElementById('start');
         start.addEventListener('click', function(){
             toggleClasses(document.getElementById('start-screen'), 'hide', 'show');
-            toggleClasses();
+            toggleClasses(document.getElementById('game-screen'), 'hide', 'show');
             startGame();
         })
 })
