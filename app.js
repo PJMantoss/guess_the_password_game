@@ -47,4 +47,9 @@ document.addEventListener('DOMContentLoaded', function(){
             }
             return arrayCopy;
         }
+
+        let setGuessCount = newCount => {
+            guessCount = newCount;
+            
+        }
 })
