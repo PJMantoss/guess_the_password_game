@@ -31,3 +31,18 @@ body {
     overflow: hidden;
     transition-duration: 1s;
   }
+
+#start {
+    background-color: black;
+    border: 5px solid #00FF00;
+    border-radius: 5px;
+    font-size: 3em;
+    display: block;
+    margin: 100px auto;
+  }
+
+#start:hover {
+    cursor: pointer;
+    background-color: #00FF00;
+    color: black;
+  }
