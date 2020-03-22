@@ -8,5 +8,9 @@ document.addEventListener('DOMContentLoaded', function(){
             toggleClasses(document.getElementById('start-screen'), 'hide', 'show');
             toggleClasses(document.getElementById('game-screen'), 'hide', 'show');
             startGame();
-        })
+        });
+
+        let toggleClasses = () => {}
+
+        let startGame = () => {}
 })
