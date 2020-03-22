@@ -57,3 +57,10 @@ body {
     padding: 0;
   }
 
+#word-list > li {
+    padding: 5px;
+  }
+
+#word-list > li.disabled {
+    color: #ccc;
+  }
