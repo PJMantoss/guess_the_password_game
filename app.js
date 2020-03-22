@@ -10,7 +10,14 @@ document.addEventListener('DOMContentLoaded', function(){
             startGame();
         });
 
-        let toggleClasses = () => {}
+        let toggleClasses = element => {
+            for (let i=1; i<arguments.length; i++){
+                element.classList.toggle(arguments[i]);
+            }
+        }
 
-        let startGame = () => {}
+        let startGame = () => {
+            let wordList = document.getElementById('word-list');
+            let randomWords = getRandomValues(words, wordCount)
+        }
 })
