@@ -24,4 +24,10 @@ body {
     max-height: 1000px;
     transition-duration: 1s;
     display: block;
-}
+  }
+
+.hide {
+    max-height: 0;
+    overflow: hidden;
+    transition-duration: 1s;
+  }
