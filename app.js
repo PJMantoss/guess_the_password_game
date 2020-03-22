@@ -35,5 +35,13 @@ document.addEventListener('DOMContentLoaded', function(){
             return shuffle(array).slice(0, valNum);
         }
 
-        let shuffle = array => {}
+        let shuffle = array => {
+            let arrayCopy = array.slice();
+
+            for (let i = arrayCopy.length - 1; i > 0; i--){
+                let j = Math.floor(Math.random() * (i + 1));
+
+                let temp = arrayCopy[i];
+            }
+        }
 })
