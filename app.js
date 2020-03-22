@@ -30,4 +30,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
             wordList.addEventListener('click', updateGame);
         }
+
+        let getRandomValues = (array, valNum) => {
+            return shuffle(array).slice(0, valNum);
+        }
+
+        let shuffle = array => {}
 })
