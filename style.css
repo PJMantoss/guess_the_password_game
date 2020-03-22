@@ -64,3 +64,9 @@ body {
 #word-list > li.disabled {
     color: #ccc;
   }
+
+#word-list > li:not(.disabled):hover {
+    color: yellow;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
