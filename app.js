@@ -71,4 +71,17 @@ document.addEventListener('DOMContentLoaded', function(){
                 this.removeEventListener('click', updateGame);
             }
         }
-})
+
+        let compareWords = (word1, word2) => {
+            if (word1.length !== word2.length){
+                throw "Words must have the same length!";
+            }
+
+            let count = 0;
+            for (let i=0; i<word1.length; i++){
+                if (word1[i] === word2[i]) count++;
+            }
+
+            return count;
+        }
+});
