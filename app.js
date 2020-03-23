@@ -66,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function(){
             if (similarityScore === password.length){
                 toggleClasses(document.getElementById('winner'), 'hide', 'show');
                 this.removeEventListener('click', updateGame);
+            } else if (guessCount === 0){
+                toggleClasses(document.getElementById('loser'), 'hide', 'show');
+                this.removeEventListener('click', updateGame);
             }
         }
 })
