@@ -64,7 +64,8 @@ document.addEventListener('DOMContentLoaded', function(){
             }
 
             if (similarityScore === password.length){
-                toggleClasses(document.getElementById('winner'), 'hide', 'show')
+                toggleClasses(document.getElementById('winner'), 'hide', 'show');
+                this.removeEventListener('click', updateGame);
             }
         }
 })
