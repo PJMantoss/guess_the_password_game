@@ -57,7 +57,14 @@ document.addEventListener('DOMContentLoaded', function(){
         let updateGame = e => {
             if (e.target.tagName === 'LI' && !e.target.classList.contains('disabled')){
                 let guess = e.target.innerText;
-                let similarityScore = compareWords(guess, password)
+                let similarityScore = compareWords(guess, password);
+                e.target.classList.add('disabled');
+                e.target.innerText = guess + '=> Matching Letters ' + similarityScore;
+                setGuessCount(guessCount - 1)
+            }
+
+            if (similarityScore === password.length){
+                toggleClasses(document.getElementById('winner'), 'hide', 'show')
             }
         }
 })
